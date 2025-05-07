@@ -37,3 +37,10 @@ $(document).ready(function () {
         }
     });
 });
+$(document).ready(function () {
+    $("#navbarNavDropdown").on("click", "a", function (e) {
+        e.preventDefault();
+        $("a").removeClass("active");
+        $(this).addClass("active");
+    });
+});
